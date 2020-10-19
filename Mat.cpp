@@ -1,100 +1,100 @@
 #include "Funkcje.cpp"
 #include "stdafx.h"
 using namespace System;
-class Mat
+class mat
 {
 public: static const double Pi; //3.14159265359;
-public: static double Odwrotnoœæ(double x)
+public: static double Odwrotnosc(double x)
 {
-	Funkcje::Zwróæ(1 / x);
+	Funkcje::Zwroc(1 / x);
 }
 public: static double Przeciwna(double x)
 {
-	Funkcje::Zwróæ(-x);
+	Funkcje::Zwroc(-x);
 }
-		class Œrednia
+		class srednia
 		{
-		public: static double ŒredniaArytm(double a, double b, double c, double d, double e, double f, double g)
+		public: static double SredniaArytm(double a, double b, double c, double d, double e, double f, double g)
 		{
-			Funkcje::Zwróæ((a + b + c + d + e + f + g) / 7);
+			Funkcje::Zwroc((a + b + c + d + e + f + g) / 7);
 		}
-		public: static double ŒredniaGeometryczna(double a, double b, double c, double d, double e, double f, double g)
+		public: static double SredniaGeometryczna(double a, double b, double c, double d, double e, double f, double g)
 		{
-			Funkcje::Zwróæ(Mat::Pierw(a * b * c * d * e * f * g, 7));
+			Funkcje::Zwroc(Mat::Pierw(a * b * c * d * e * f * g, 7));
 		}
-		public: static double ŒredniaHarmoniczna(double a, double b, double c, double d, double e, double f, double g)
+		public: static double SredniaHarmoniczna(double a, double b, double c, double d, double e, double f, double g)
 		{
-			Funkcje::Zwróæ(7 / ((1 / a) + (1 / b) + (1 / c) + (1 / d) + (1 / e) + (1 / f) + (1 / g)));
+			Funkcje::Zwroc(7 / ((1 / a) + (1 / b) + (1 / c) + (1 / d) + (1 / e) + (1 / f) + (1 / g)));
 		}
 		};
 public: static double Pierw2(double arg)
 {
-	Funkcje::Zwróæ(Math::Sqrt(arg));
+	Funkcje::Zwroc(Math::Sqrt(arg));
 }
 public: static double Pierw(double arg, int grad)
 {
-	Funkcje::Zwróæ(Math::Pow(arg, (1 / grad)));
+	Funkcje::Zwroc(Math::Pow(arg, (1 / grad)));
 }
-public: static long double Potêga(long double arg, unsigned int exp)
+public: static long double Potega(long double arg, unsigned int exp)
 {
-	Funkcje::Zwróæ(Math::Pow(arg, exp));
+	Funkcje::Zwroc(Math::Pow(arg, exp));
 }
-		class PolaObwody
+		class polaObwody
 		{
-		public:static double PoleKo³a(double r) //Pole Ko³a
+		public:static double PoleKola(double r) //Pole Koè±‰
 		{
-			Funkcje::Zwróæ(Pi * Mat::Potêga(r, 2));
+			Funkcje::Zwroc(Pi * Mat::Potega(r, 2));
 		}
-		public: static double ObwódKo³a(double r) //Obwód Ko³a
+		public: static double ObwodKola(double r) //Obwéš Koè±‰
 		{
-			Funkcje::Zwróæ(2 * Pi * r);
+			Funkcje::Zwroc(2 * Pi * r);
 		}
-		public: static int ObwódTrójk¹ta(int a, int b, int c)
+		public: static int ObwodTrojkata(int a, int b, int c)
 		{
-			Funkcje::Zwróæ(a + b + c);
+			Funkcje::Zwroc(a + b + c);
 		}
 		public: static int PoleTrapezu(int a, int b, int h) //Pole Trapezu
 		{
-			Funkcje::Zwróæ(((a + b) * h) / 2);
+			Funkcje::Zwroc(((a + b) * h) / 2);
 		}
-		public: static int PoleRównoleg³oboku(int a, int h) //Pole Równoleg³oboku
+		public: static int PoleRownolegloboku(int a, int h) //Pole Ré—šnolegé€™boku
 		{
-			Funkcje::Zwróæ(a * h);
+			Funkcje::Zwroc(a * h);
 		}
-		public: static int PoleProstok¹ta(int a, int b) //Pole Prostok¹ta
+		public: static int PoleProstokata(int a, int b) //Pole Prostoké–a
 		{
-			Funkcje::Zwróæ(a * b);
+			Funkcje::Zwroc(a * b);
 		}
 		public: static int PoleRombu(int e, int f) //Pole Rombu
 		{
-			Funkcje::Zwróæ((e * f) / 2);
+			Funkcje::Zwroc((e * f) / 2);
 		}
 		public: static int PoleKwadratu(int a) //Pole Kwadratu
 		{
-			Funkcje::Zwróæ(Mat::Potêga(a, 2));
+			Funkcje::Zwroc(Mat::Potega(a, 2));
 		}
-		public: static int PoleTrójk¹ta(int a, int h) //Pole Trójk¹ta
+		public: static int PoleTrojkata(int a, int h) //Pole Tré©ké–a
 		{
-			Funkcje::Zwróæ((a * h) / 2);
+			Funkcje::Zwroc((a * h) / 2);
 		}
 		};
-		class SpecjalneFunkcje
+		class specjalneFunkcje
 		{
-		public: static int Abs(int x) //Wartoœæ Bezwzglêdna
+		public: static int Abs(int x) //Wartoî°« Bezwzglç’ na
 		{
-			Funkcje::Zwróæ(Math::Abs(x));
+			Funkcje::Zwroc(Math::Abs(x));
 		}
 		public: static int Sgn(int x) //Funkcja Signum
 		{
-			Funkcje::Zwróæ(Math::Sign(x));
+			Funkcje::Zwroc(Math::Sign(x));
 		}
 		public: static double Hiperbola(int x) //Hiperbola
 		{
-			Funkcje::Zwróæ(Odwrotnoœæ(x));
+			Funkcje::Zwroc(Odwrotnosc(x));
 		}
 		public: static int Parabola(int x) //Parabola
 		{
-			Funkcje::Zwróæ(Mat::Potêga(x, 2));
+			Funkcje::Zwroc(Mat::Potega(x, 2));
 		}
 		};
 };
