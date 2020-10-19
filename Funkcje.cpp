@@ -1,62 +1,62 @@
 #include "stdafx.h"
 using namespace System;
 
-class Funkcje{
+class funkcje{
 	//"Returny"
 public:
-	static int Zwróæ(int arg)
+	static int Zwroc(int arg)
 	{
 		return arg;
 	}
-	static short Zwróæ(short arg)
+	static short Zwroc(short arg)
 	{
 		return arg;
 	}
-	static long Zwróæ(long arg)
+	static long Zwroc(long arg)
 	{
 		return arg;
 	}
-	static long long Zwróæ(long long arg)
+	static long long Zwroc(long long arg)
 	{
 		return arg;
 	}
-	static unsigned int Zwróæ(unsigned int arg)
+	static unsigned int Zwroc(unsigned int arg)
 	{
 		return arg;
 	}
-	static unsigned short Zwróæ(unsigned short arg)
+	static unsigned short Zwroc(unsigned short arg)
 	{
 		return arg;
 	}
-	static unsigned long Zwróæ(unsigned long arg)
+	static unsigned long Zwroc(unsigned long arg)
 	{
 		return arg;
 	}
-	static unsigned long long Zwróæ(unsigned long long arg)
+	static unsigned long long Zwroc(unsigned long long arg)
 	{
 		return arg;
 	}
-	static float Zwróæ(float arg)
+	static float Zwroc(float arg)
 	{
 		return arg;
 	}
-	static double Zwróæ(double arg)
+	static double Zwroc(double arg)
 	{
 		return arg;
 	}
-	static long double Zwróæ(long double arg)
+	static long double Zwroc(long double arg)
 	{
 		return arg;
 	}
-	static char Zwróæ(char arg)
+	static char Zwroc(char arg)
 	{
 		return arg;
 	}
-	static unsigned char Zwróæ(unsigned char arg)
+	static unsigned char Zwroc(unsigned char arg)
 	{
 		return arg;
 	}
-	static String^ Zwróæ(String^ arg)
+	static String^ Zwroc(String^ arg)
 	{
 		return arg;
 	}
