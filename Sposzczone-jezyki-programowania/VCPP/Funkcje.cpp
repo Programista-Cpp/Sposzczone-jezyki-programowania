@@ -60,4 +60,8 @@ public:
 	{
 		return arg;
 	}
+	static auto Zwroc(auto arg)
+	{
+		return  arg;
+	}
 };
