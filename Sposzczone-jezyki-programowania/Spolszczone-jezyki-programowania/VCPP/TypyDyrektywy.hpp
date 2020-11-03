@@ -21,9 +21,8 @@
   #define stala     const
   #define stalewyr  constexpr
   //---------------------------------------
-  //wskaznik (usunac jesli nie dziala)
-  template<typename T>
-  #define wsk<T> T*
+  //wskaznik
+  #define wsk auto*
   //---------------------------------------
   //typy zlozone
   #define klasa     class
