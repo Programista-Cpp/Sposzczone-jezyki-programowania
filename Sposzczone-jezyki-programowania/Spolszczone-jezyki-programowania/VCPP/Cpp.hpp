@@ -1,9 +1,9 @@
 #ifndef Cpp_HPP_DOLACZONE
   #define Cpp_HPP_DOLACZONE 1
 
-  // common/base types
+  /// typy zwykle/podstawowe
   typedef calk      int
-  tyedef  maly      short
+  typedef maly      short
   typedef duzy      long
   typedef dduzy     long long
   typedef nat       unsigned int
@@ -13,7 +13,6 @@
   typedef rzeczyw   float
   typedef _2rzeczyw double
   typedef d2rzeczyw long double
-  typedef ciag      string
   typedef znak      char
   typedef plusznak  unsigned char
   typedef log       bool
@@ -21,39 +20,48 @@
   #define stala     const
   #define stalewyr  constexpr
   //---------------------------------------
-  // pointer and reference
+  /// wskaznik i referencja
   typedef wsk     auto*
   typedef wskwsk  auto**
   typedef ref     auto&
   typedef refref  auto&&
   //---------------------------------------
-  // complex types
+  /// typy zlozone
   typedef klasa     class
-  typedef strukt    struct
+  typedef struktura struct
   typedef wylicz    enum
   typedef unia      union
   //---------------------------------------
-  // generic types
+  /// kontenery
+  typedef ciag      std::string
   typedef wektor    std::vector
   typedef tablica   std::array
   typedef lista     std::list
   typedef slownik   std::map
-  typedef zbior    std::set
+  typedef zbior     std::set
+  typedef krotka    std::tuple
+  typedef para      std::pair
+  typedef kolonia   std::colony /// To dopiero BEDZIE w C++!
+  typedef kolejka   std::queue
+  typedef podw_kol  std::deque
+  typedef stos      std::stack
+  //---------------------------------------
+  /// rzeczy na "t"
   #define szablon   template
   #define nazwatypu typename
   #define deftypu   typedef
   #define idtypu    typeid
   
   //---------------------------------------
-  // modifiers
-  #define statycz   static
-  #define publicz   public
-  #define prywat    private
-  #define chronione protected
-  #define przyjaz   friend
-  #define NIC       NULL
-  
-  
+  // modyfikatory
+  #define statyczne   static
+  #define publiczne   public
+  #define prywatne    private
+  #define chronione   protected
+  #define przyjazne   friend
+  //---------------------------------------
+  #define NIC         NULL
+  #define nicwsk      nullptr
   //---------------------------------------
   // directives
   #define def       define
@@ -61,4 +69,28 @@
   #define przestrz  namespace
   #define importuj  import
   #define modul     module
+  //----------------------------------------
+  // inne slowa kluczowe
+  #define wymaga requires
+  #define probuj      try
+  #define lap         catch
+  #define ostatecznie finally
+  #define jesli       if
+  #define inacz_jesli else if
+  #define inaczej     else
+  #define przelacz    switch
+  #define mozliwosc   case
+  #define dopoki      while
+  #define rob         do
+  #define dla         for
+  #define wyjatek     std::exception
+  /// I/O
+  #define drukuj      std::cout<<
+  #define czytaj      std::cin>>
+  #define drukuj_blad std::cerr<<
+  #define zapis       std::clog<<
+  /// przeplyw kontroli
+  #define zwroc       return
+  #define kontynuuj   continue
+  #define break       przerwij
 #endif
