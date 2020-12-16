@@ -15,7 +15,7 @@
   #define d2rzeczyw long double
   #define znak      char
   #define plusznak  unsigned char
-  #define log       bool
+  #define logicz    bool
   #define pustka    void
   #define stala     const
   #define stalewyr  constexpr
@@ -82,11 +82,11 @@
     #define stos      std::stack
   #endif
   /// Przyszle
-  #ifdef __CPP_2b /// Musisz to zdefiniowac jak na razie, aby przed dodaniem do jezyka sie skompilowalo
+  #ifdef __CPP_2b /// Musisz to zdefiniowac jak na razie, aby przed dodaniem do jezyka sie skompilowalo (jesli masz jakas wersje eksperymentalna :))
   /// Kontenery
     #define kolonia   std::colony
     #ifdef _GLIBCXX_RANGES  /// Dla przyszlego std::ranges::accumulate
-      #define akumuluj(x, y, z) std::ranges::accumulate(x, y, z) /// Dla std::accumulate patrz: inne slowa kluczowe -> algorytmy
+      #define akumuluj(x, y, z) std::ranges::accumulate(x, y, z) /// Dla std::accumulate patrz: inne slowa kluczowe -> algorytmy (TODO)
     #endif
   #endif
   //---------------------------------------
@@ -107,14 +107,14 @@
   #define NIC         NULL
   //---------------------------------------
   // directives
-  #define def       define
-  #define uzywaj    using
-  #define przestrz  namespace
-  #define importuj  import
-  #define modul     module
+  #define def               define
+  #define uzywaj            using
+  #define przestrzen_nazw   namespace
+  #define importuj          import
+  #define modul             module
   //----------------------------------------
   // inne slowa kluczowe
-  #define wymaga requires
+  #define wymaga      requires
   #define probuj      try
   #define lap         catch
   #define ostatecznie finally
@@ -126,7 +126,9 @@
   #define dopoki      while
   #define rob         do
   #define dla         for
-  #define wyjatek     std::exception
+  #ifdef _GLIBCXX_EXCEPTION
+    #define wyjatek     std::exception
+  #endif
   /// I/O
   #define drukuj      std::cout<<
   #define czytaj      std::cin>>
