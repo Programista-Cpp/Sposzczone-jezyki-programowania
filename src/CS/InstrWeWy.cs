@@ -1,4 +1,3 @@
-﻿
 namespace InstrWeWy
 {
 
@@ -33,4 +32,3 @@ namespace InstrWeWy
             Console.Read();
         }
     }
-}
