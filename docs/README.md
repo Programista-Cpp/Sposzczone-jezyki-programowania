@@ -1,6 +1,6 @@
 ---
-Author: Antoni Kiedos
-Project: PLC++
+author: ankiedos
+project: PLC++
 ---
 # Spis Treści
 * [1. Streszczenie](https://github.com/Programista-Cpp/Sposzczone-jezyki-programowania/tree/master/docs/README.md#Streszczenie)
@@ -12,15 +12,15 @@ Project: PLC++
   * [1.3.1. Średnie](https://github.com/Programista-Cpp/Sposzczone-jezyki-programowania/tree/master/docs/README.md#Średnie)
 # Streszczenie
 ## Patrz również: [Streszczenie streszczenia](https://github.com/Programista-Cpp/Sposzczone-jezyki-programowania/tree/master/README.md)
-## Cpp.hpp <!-- omit in toc -->
-> [!NOTE]
-> Jeśli masz dostęp do eksperymentalnej wersji standardu C++2b, w której jest:
+## Cpp.hpp
+
+> Jeśli masz dostęp do eksperymentalnej wersji standardu C++2b (nieważne jak zdobyłeś :smile:), w której jest:
 > * std::ranges::accumulate();
 > * lub std::colony;
-- [x] task
+
 Musisz zdefiniować
 
-> ```cpp
+> ```c++
 > #define __CPP_2b
 > ```
 ### Typy Podstawowe
