@@ -1,4 +1,4 @@
-﻿namespace Mat
+namespace Mat
 {
     using System;
     public class Mat
@@ -16,4 +16,3 @@
             return Convert.ToUInt64(Math.Pow(a, e));
         }
     }
-}

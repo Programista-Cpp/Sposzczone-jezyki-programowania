@@ -1,4 +1,4 @@
-﻿namespace PolskaKonwersjaTypow
+namespace PolskaKonwersjaTypow
 {
     using System;
     template<typename Z>
